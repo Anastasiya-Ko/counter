@@ -11,9 +11,8 @@ public class CounterService {
     public String read(String text) {
 
         if (text == null) {
-            throw new RuntimeException("Строка не должна быть пустой");
+            return "Строка не должна быть пустой";
         }
-
 
         Map<String, Integer> result = new HashMap<>();
 
